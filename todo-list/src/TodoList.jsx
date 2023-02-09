@@ -5,12 +5,16 @@ import './TodoList.css';
 function TodoList() {
     const [lista, setLista] = useState([]);
     const [novoItem, setNovoItem] = useState("");
+
+    function adicionaItem(form) {
+        form.prevent.default();
+    }
     return (
         <div>
             <h1>
                 Lista de Tarefas
             </h1>
-            <form>
+            <form onSubmit={adicionaItem}>
                 <input
                     type="text"
                     value={novoItem}
