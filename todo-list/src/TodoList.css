@@ -50,6 +50,11 @@ button.add {
   top: 0;
 }
 
+button.add:hover {
+  color: white;
+  background: #363f88;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
