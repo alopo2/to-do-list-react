@@ -4,6 +4,7 @@ import './TodoList.css';
 
 function TodoList() {
     const [lista, setLista] = useState([]);
+    const [novoItem, setNovoItem] = useState("");
     return (
         <div>
             <h1>
