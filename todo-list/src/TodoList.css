@@ -100,6 +100,14 @@ button.add:hover {
   text-decoration: line-through;
 }
 
+button.del {
+  background: none;
+  color: #4d506e;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
