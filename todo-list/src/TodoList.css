@@ -67,4 +67,7 @@ button.add:hover {
   form {
     width: 100%;
   }
+  .listaTarefas {
+    width: 100%;
+  }
 }
