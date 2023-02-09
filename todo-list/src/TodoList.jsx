@@ -33,14 +33,19 @@ function TodoList() {
             </form>
 
             <div className="listaTarefas">
-                {
-                    lista.length < 1
-                        ?
-                        <img src={Icone} />
-                }
-                <div className="item">
-                    <span>Tarefa de Exemplo</span>
-                    <button className="del">Deletar</button>
+                <div>
+                    {
+                        lista.length < 1
+                            ?
+                            <img className="icone-central" src={Icone} />
+                            :
+                            lista.map((item, index) => (
+                                <div className="item">
+                                    <span>{item.text}</span>
+                                    <button className="del">Deletar</button>
+                                </div>
+                            ))
+                    }
                 </div>
 
                 <div className="item completo">
