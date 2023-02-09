@@ -11,7 +11,9 @@ function TodoList() {
         if (!novoItem) {
             return;
         }
-        setLista([...lista, { text: novoItem, isCompleted: false }])
+        setLista([...lista, { text: novoItem, isCompleted: false }]);
+        setNovoItem("");
+        document.getElementById('input-entrada').focus();
     }
     return (
         <div>
@@ -20,6 +22,7 @@ function TodoList() {
             </h1>
             <form onSubmit={adicionaItem}>
                 <input
+                    id="input-entrada"
                     type="text"
                     value={novoItem}
                     onChange={(e) => { setNovoItem(e.target.value) }}
