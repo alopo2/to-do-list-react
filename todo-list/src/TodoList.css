@@ -19,6 +19,18 @@ form {
   width: 600px;
 }
 
+input {
+  background-color: #2d3046;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  font-size: 16px;
+  height: 60px;
+  padding-left: 30px;
+  width: 100px;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
