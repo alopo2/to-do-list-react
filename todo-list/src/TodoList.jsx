@@ -33,7 +33,7 @@ function TodoList() {
             </form>
 
             <div className="listaTarefas">
-                <div>
+                <div style={{ textAlign: 'center' }}>
                     {
                         lista.length < 1
                             ?
