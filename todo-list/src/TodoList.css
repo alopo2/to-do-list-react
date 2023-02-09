@@ -82,6 +82,15 @@ button.add:hover {
   padding: 10px 15px;
 }
 
+.item.completo {
+  display: flex;
+  justify-content: space-between;
+  background: #1e1f2e;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
