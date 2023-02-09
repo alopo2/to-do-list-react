@@ -125,6 +125,11 @@ button.deleteAll {
   border-radius: 5px;
 }
 
+button.deleteAll:hover {
+  background: #ff004c;
+  color: white;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
