@@ -21,7 +21,7 @@ function TodoList() {
                     <button>Deletar</button>
                 </div>
 
-                <div className="itemCompleto">
+                <div className="item completo">
                     <span>Tarefa Concluída</span>
                     <button>Deletar</button>
                 </div>
