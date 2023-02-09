@@ -71,6 +71,10 @@ button.add:hover {
   cursor: pointer;
 }
 
+.item:hover {
+  background: #151627;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
