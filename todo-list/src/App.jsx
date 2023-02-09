@@ -4,6 +4,6 @@ import TodoList from './TodoList'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <TodoList />
   </React.StrictMode>,
 )
