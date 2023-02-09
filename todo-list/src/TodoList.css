@@ -75,6 +75,13 @@ button.add:hover {
   background: #151627;
 }
 
+.item span {
+  width: 100%;
+  color: white;
+  margin-right: 10px;
+  padding: 10px 15px;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
