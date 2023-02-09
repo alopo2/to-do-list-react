@@ -3,6 +3,7 @@ import { useState } from "react";
 import './TodoList.css';
 
 function TodoList() {
+    const [lista, setLista] = useState([]);
     return (
         <div>
             <h1>
