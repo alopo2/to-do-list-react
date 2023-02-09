@@ -63,6 +63,14 @@ button.add:hover {
   margin: auto;
 }
 
+.item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #363b65;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
