@@ -91,6 +91,14 @@ button.add:hover {
   cursor: pointer;
 }
 
+.item.completo span {
+  width: 100%;
+  color: #4d506e;
+  margin-right: 10px;
+  padding: 10px 15px;
+  text-decoration: line-through;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
