@@ -55,6 +55,14 @@ button.add:hover {
   background: #363f88;
 }
 
+.listaTarefas {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 600px;
+  margin: auto;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
