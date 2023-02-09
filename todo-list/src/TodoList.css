@@ -16,3 +16,9 @@ form {
   height: 40px;
   width: 600px;
 }
+
+@media screen and (max-width: 900px) {
+  form {
+    width: 100%;
+  }
+}
