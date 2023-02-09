@@ -16,6 +16,12 @@ function TodoList() {
         setNovoItem("");
         document.getElementById('input-entrada').focus();
     }
+
+    function clicou(index) {
+        const listaAux = [...lista];
+        listaAux[index].isCompleted = !listaAux[index].isCompleted;
+        setLista(listaAux);
+    }
     return (
         <div>
             <h1>
@@ -40,17 +46,15 @@ function TodoList() {
                             <img className="icone-central" src={Icone} />
                             :
                             lista.map((item, index) => (
-                                <div className="item">
-                                    <span>{item.text}</span>
+                                <div
+                                    key={index}
+                                    className={item.isCompleted ? "item completo" : "item"}
+                                >
+                                    <span onClick={() => { clicou(index) }}>{item.text}</span>
                                     <button className="del">Deletar</button>
                                 </div>
                             ))
                     }
-                </div>
-
-                <div className="item completo">
-                    <span>Tarefa Concluída</span>
-                    <button className="del">Deletar</button>
                 </div>
                 <button className="deleteAll">Deletar Todas</button>
             </div>
