@@ -116,6 +116,15 @@ button.del:hover {
   cursor: pointer;
 }
 
+button.deleteAll {
+  border: 1px solid #ff004c;
+  background: none;
+  padding: 15px;
+  color: #ff004c;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
