@@ -108,6 +108,14 @@ button.del {
   cursor: pointer;
 }
 
+button.del:hover {
+  background: #ff004c;
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   form {
     width: 100%;
