@@ -13,6 +13,8 @@ function TodoList() {
             <form>
                 <input
                     type="text"
+                    value={novoItem}
+                    onChange={(e) => { setNovoItem(e.target.value) }}
                     placeholder="Adicione uma tarefa"
                 />
                 <button className="add" type="submit">Add</button>
