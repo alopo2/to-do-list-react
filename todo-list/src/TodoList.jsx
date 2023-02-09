@@ -25,6 +25,7 @@ function TodoList() {
                     <span>Tarefa Concluída</span>
                     <button className="del">Deletar</button>
                 </div>
+                <button className="deleteAll">Deletar Todas</button>
             </div>
         </div>
 
