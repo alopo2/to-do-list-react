@@ -8,6 +8,10 @@ function TodoList() {
 
     function adicionaItem(form) {
         form.prevent.default();
+        if (!novoItem) {
+            return;
+        }
+        setLista([...lista, { text: novoItem, isCompleted: false }])
     }
     return (
         <div>
