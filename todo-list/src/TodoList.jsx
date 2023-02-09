@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import './TodoList.css';
+import Icone from './assets/icon.webp';
 
 function TodoList() {
     const [lista, setLista] = useState([]);
@@ -32,6 +33,11 @@ function TodoList() {
             </form>
 
             <div className="listaTarefas">
+                {
+                    lista.length < 1
+                        ?
+                        <img src={Icone} />
+                }
                 <div className="item">
                     <span>Tarefa de Exemplo</span>
                     <button className="del">Deletar</button>
