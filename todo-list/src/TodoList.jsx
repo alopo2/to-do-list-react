@@ -51,7 +51,7 @@ function TodoList() {
                                     className={item.isCompleted ? "item completo" : "item"}
                                 >
                                     <span onClick={() => { clicou(index) }}>{item.text}</span>
-                                    <button className="del">Deletar</button>
+                                    <button onClick={() => { deleta(index) }} className="del">Deletar</button>
                                 </div>
                             ))
                     }
