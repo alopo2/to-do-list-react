@@ -22,6 +22,12 @@ function TodoList() {
         listaAux[index].isCompleted = !listaAux[index].isCompleted;
         setLista(listaAux);
     }
+
+    function deleta(index) {
+        const listaAux = [...lista];
+        listaAux.splice(index, 1);
+        setLista(listaAux);
+    }
     return (
         <div>
             <h1>
