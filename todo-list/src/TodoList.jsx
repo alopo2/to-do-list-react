@@ -28,6 +28,11 @@ function TodoList() {
         listaAux.splice(index, 1);
         setLista(listaAux);
     }
+
+    function deletaTodasTarefas() {
+        setLista([]);
+    }
+
     return (
         <div>
             <h1>
