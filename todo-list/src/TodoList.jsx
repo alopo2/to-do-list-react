@@ -9,6 +9,10 @@ function TodoList() {
     const [lista, setLista] = useState(listaStorage ? JSON.parse(listaStorage) : []);
     const [novoItem, setNovoItem] = useState("");
 
+    useEffect(() => {
+        localStorage.setItem('Lista', JSON.stringify(lista));
+    }, [lista])
+
     function adicionaItem(form) {
         form.prevent.default();
         if (!novoItem) {
