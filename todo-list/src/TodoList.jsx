@@ -4,7 +4,9 @@ import './TodoList.css';
 import Icone from './assets/icon.webp';
 
 function TodoList() {
-    const [lista, setLista] = useState([]);
+    const listaStorage = localStorage.getItem('Lista');
+
+    const [lista, setLista] = useState(listaStorage ? JSON.parse(listaStorage) : []);
     const [novoItem, setNovoItem] = useState("");
 
     function adicionaItem(form) {
