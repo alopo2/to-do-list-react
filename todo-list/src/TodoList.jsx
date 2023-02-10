@@ -61,8 +61,11 @@ function TodoList() {
                                 </div>
                             ))
                     }
+                    {
+                        lista.length > 0 &&
+                        <button onClick={() => { deletaTodasTarefas(index) }} className="deleteAll">Deletar Todas</button>
+                    }
                 </div>
-                <button className="deleteAll">Deletar Todas</button>
             </div>
         </div>
 
